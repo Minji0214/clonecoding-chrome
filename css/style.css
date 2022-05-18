@@ -1,0 +1,72 @@
+.hidden {
+     display: none;
+}
+
+#quote{
+     display: flex;
+     justify-content: center;
+    color:gray;
+}
+
+img {position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+     z-index:-1;
+    filter: fade(-10);
+
+
+}
+
+* {
+    color: white;
+
+}
+
+#clock {
+    text-shadow: 4px 2px 2px gray;
+}
+#greeting {
+     display: flex;
+     justify-content: center;
+    opacity: 0.5;
+ }
+
+#clock{
+    display: flex;
+        display: column;
+        justify-content: center;
+        align-items: center;
+    flex-direction: column ;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+   white-space:nowrap;
+    font-size: 50px;
+
+}
+
+#login-form {
+opacity: 0.5;
+      z-index: 1;
+
+
+}
+ #try {
+     position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+
+ }
