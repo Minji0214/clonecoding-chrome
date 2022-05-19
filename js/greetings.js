@@ -1,18 +1,20 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("#login-form input");
 const greeting = document.querySelector('#greeting');
+
 const hidden_classname="hidden";
 const username_key = "username";
+
 function onLoginSubmit(event){
   event.preventDefault();
-  loginForm.classList.add(hidden_classname)
   const username = loginInput.value;
+  loginForm.classList.add(hidden_classname)
   localStorage.setItem(username_key, username);
 paintGreetings(username);
 }
 
 function paintGreetings(username){
-  greeting.innerText = `Hello ${username}`;
+  greeting.innerText = `안녕하세요 ${username}님!`;
   greeting.classList.remove(hidden_classname);
 }
 
